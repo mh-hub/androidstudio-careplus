@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/main_orange"
+        android:layout_width="match_parent"
+        android:layout_height="370sp">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="400sp">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="500dp"
+                android:layout_height="380dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="-80dp"
+                android:background="@drawable/maincircleshape">
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="110sp">
+
+                <ImageView
+                    android:layout_width="85sp"
+                    android:layout_height="85sp"
+                    android:background="@drawable/circleshape" />
+
+                <Button
+                    android:id="@+id/addmedicine_btn"
+                    android:layout_width="65sp"
+                    android:layout_height="65sp"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/addmedicin"
+                    android:padding="3dp" />
+
+            </RelativeLayout>
+
+
+        </FrameLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+
+            <ImageButton
+                android:id="@+id/setting_btn"
+                android:layout_width="35sp"
+                android:layout_height="35sp"
+                android:background="@drawable/ic_settings_black_24dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10sp"
+                android:layout_marginTop="10sp"/>
+
+            <TextView
+                android:id="@+id/tv_hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="40sp"
+                android:layout_marginTop="70sp"
+                android:fontFamily="@font/pink"
+                android:text="안녕하세요!"
+                android:textColor="@color/colorwhite"
+                android:textSize="45sp"
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tv_hello"
+                android:layout_marginTop="20sp"
+                android:layout_marginLeft="10sp">
+
+                <TextView
+                    android:id="@+id/myemail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30sp"
+                    android:fontFamily="@font/pink"
+                    android:layout_centerVertical="true"
+                    android:hint="email 출력"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10sp"
+                    android:layout_toRightOf="@+id/myemail"
+                    android:fontFamily="@font/pink"
+                    android:gravity="center"
+                    android:text="님"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="40sp" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_main"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/main_orange"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="-14sp">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+                <RelativeLayout
+                    android:layout_margin="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="85sp"
+                        android:layout_height="85sp"
+                        android:background="@drawable/circleshape" />
+                    <Button
+                        android:id="@+id/list_btn"
+                        android:layout_width="65sp"
+                        android:layout_height="65sp"
+                        android:background="@drawable/medlist"
+                        android:layout_centerInParent="true"
+                        android:padding="3dp" />
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_margin="8sp"
+                    android:layout_marginTop="7sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginTop="20sp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Care+"
+                        android:textColor="#000000"
+                        android:textSize="32sp"
+                        android:textStyle="bold"/>
+
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_margin="15sp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="85sp"
+                        android:layout_height="85sp"
+                        android:background="@drawable/circleshape" />
+
+                    <Button
+                        android:id="@+id/map_btn"
+                        android:layout_width="65sp"
+                        android:layout_height="65sp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/map"
+                        android:padding="3dp" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="6sp">
+                <RelativeLayout
+                    android:layout_margin="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="85sp"
+                        android:layout_height="85sp"
+                        android:background="@drawable/circleshape" />
+                    <Button
+                        android:id="@+id/best_btn"
+                        android:layout_width="65sp"
+                        android:layout_height="65sp"
+                        android:layout_centerInParent="true"
+                        android:background="@drawable/best"
+                        android:padding="3dp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_margin="15sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="85sp"
+                        android:layout_height="85sp"
+                        android:background="@drawable/circleshape" />
+                    <Button
+                        android:id="@+id/statistics_btn"
+                        android:layout_width="65sp"
+                        android:layout_height="65sp"
+                        android:background="@drawable/statistics"
+                        android:layout_centerInParent="true"
+                        android:padding="3dp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

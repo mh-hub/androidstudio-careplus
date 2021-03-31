@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding = "20dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/eyetextview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="3. 얼라이브! 원스데일리"
+        android:fontFamily="@font/pink"
+        android:textSize="20sp"
+        android:layout_weight="0.1"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextName"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:text="  •섭취량/섭취방법"
+        android:fontFamily="@font/pink"
+        android:layout_weight="0.1"
+        android:textColor="#000000"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text1"
+        android:text=""
+        android:textSize="12sp"
+        android:layout_weight="1"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:text="  •기능성내용"
+        android:layout_weight="0.1"
+        android:fontFamily="@font/pink"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:text=""
+        android:textSize="12sp"
+        android:layout_weight="1"
+        android:textColor="#000000"/>
+
+
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:text="구매링크"
+        android:fontFamily="@font/pink"
+        android:textSize="15sp"
+        android:onClick="BuyVita3Clicked"
+        android:background="@drawable/shape_add"
+        android:textColor="#ffffff"
+        android:textStyle="bold"
+        />
+
+</LinearLayout>

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <ImageButton
+        android:id="@+id/categorybtn2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_home_black_24dp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="주기별 복용"
+        android:fontFamily="@font/pink"
+        android:textSize="30dp"
+        android:textColor="#000000"
+        />
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:layout_marginTop="1dp">
+
+            <Button
+                android:layout_width="85sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_add2"
+                android:fontFamily="@font/pink"
+                android:text="종류 선택"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_marginBottom="3sp"/>
+
+            <Spinner
+                android:id="@+id/select_spinner_p"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:padding="15dp"
+                android:entries="@array/약선택"
+                android:backgroundTint = "#ccFCAE1E"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="85sp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/shape_add2"
+                android:fontFamily="@font/pink"
+                android:text="시작 날짜"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/startday"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:focusableInTouchMode="false"
+                android:hint="2020.05.29"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="85sp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shape_add2"
+                android:fontFamily="@font/pink"
+                android:text="복용 주기"
+                android:layout_gravity="center"
+                android:textColor="#ffffff"
+                android:textSize="22dp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/Doseperiod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:hint="ex)3일->3"
+                android:layout_gravity="center"
+                android:textColor="#000000"
+                android:textSize="17dp" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pink"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:text="이름 "
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/periodname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:gravity="center"
+            android:hint="약 이름"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/pink"
+            android:gravity="center"
+            android:background="@android:color/transparent"
+            android:text="시간 "
+            android:textSize="30dp" />
+
+        <EditText
+            android:id="@+id/mtime1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="시간"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="25dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/mtime2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="시간"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:layout_marginLeft="68dp"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal">
+
+
+        <EditText
+            android:id="@+id/mtime3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="시간"
+            android:focusableInTouchMode="false"
+            android:gravity="center"
+            android:layout_marginLeft="68dp"
+            android:textColor="#000000"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:orientation="vertical">
+        <Button
+            android:id="@+id/period_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OK"
+            android:fontFamily="@font/pink"
+            android:textSize="25dp"
+            android:layout_gravity="right"
+            android:layout_weight="0.1"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/shape_add"
+            android:textColor="#ffffff"
+            android:textStyle="bold"/>
+    </LinearLayout>
+
+</LinearLayout>

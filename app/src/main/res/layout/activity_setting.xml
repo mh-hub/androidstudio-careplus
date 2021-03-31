@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:orientation="vertical">
+
+
+    <ImageButton
+        android:id="@+id/categorybtn2"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/ic_home_black_24dp"
+        android:layout_alignParentLeft="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/pink"
+        android:text="Setting"
+        android:textColor="#5F5F5F"
+        android:textSize="50dp"
+        android:textStyle="bold"/>
+
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="10dp">
+    <RelativeLayout
+        android:layout_marginTop="40dp"
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:background="@drawable/circle_shape" />
+        <Button
+            android:layout_width="55sp"
+            android:layout_height="55sp"
+            android:background="@drawable/w_logout"
+            android:layout_centerInParent="true"
+            android:padding="3dp"
+            android:enabled="false"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/Logoutbtn"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:background="#00ff0000"
+        android:text="로그아웃"
+        android:textSize="25dp"
+        android:fontFamily="@font/pink"/>
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp">
+    <RelativeLayout
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="7dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="60sp"
+            android:layout_height="60sp"
+            android:background="@drawable/circle_shape2" />
+        <Button
+            android:layout_width="55sp"
+            android:layout_height="55sp"
+            android:background="@drawable/w_question"
+            android:layout_centerInParent="true"
+            android:padding="3dp"
+            android:enabled="false"/>
+
+    </RelativeLayout>
+        <Button
+            android:id="@+id/Question_btn"
+            android:layout_marginTop="35dp"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="1:1 문의"
+            android:textSize="25dp"
+            android:fontFamily="@font/pink"
+            android:background="#00ff0000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="7dp">
+
+            <ImageView
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:background="@drawable/circle_shape3" />
+
+            <Button
+                android:layout_width="55sp"
+                android:layout_height="55sp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/w_help"
+                android:padding="3dp"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/help_btn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="도움말"
+            android:textSize="25dp"
+            android:fontFamily="@font/pink"
+            android:background="#00ff0000"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="7dp">
+
+            <ImageView
+                android:layout_width="60sp"
+                android:layout_height="60sp"
+                android:background="@drawable/circle_shape4" />
+
+            <Button
+                android:id="@+id/list_btn"
+                android:layout_width="55sp"
+                android:layout_height="55sp"
+                android:layout_centerInParent="true"
+                android:background="@drawable/w_out"
+                android:padding="3dp"
+                android:enabled="false"/>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/Deletebtn"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:background="#00ff0000"
+            android:fontFamily="@font/pink"
+            android:text="회원탈퇴"
+            android:textSize="25dp" />
+    </LinearLayout>
+</LinearLayout>

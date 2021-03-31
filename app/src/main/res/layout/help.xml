@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+
+    <TextView
+        android:id="@+id/statistics_text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="What is Care+"
+        android:textColor="#000000"
+        android:textSize="50dp"
+        android:fontFamily="@font/pink"
+
+        />
+
+    <TextView
+        android:id="@+id/statistics_text2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="잊지 말고 Care+와 함께"
+        android:textSize="25dp"
+        android:textStyle="bold"
+
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/help_medicin"
+                android:layout_width="134dp"
+                android:layout_height="138dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/addmedicin" />
+
+            <TextView
+                android:id="@+id/helpText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:text="복용하는 약을 추가"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/help_alarm"
+                android:layout_width="147dp"
+                android:layout_height="147dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/help_alarm" />
+
+            <TextView
+                android:id="@+id/helpText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:text="알람과 함께 건강을"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+
+            <ImageView
+                android:id="@+id/help_map"
+                android:layout_width="145dp"
+                android:layout_height="148dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/best" />
+
+            <TextView
+                android:id="@+id/helpText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:text="인기있는 영양제를 효능별로 보기"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+
+            <ImageView
+                android:id="@+id/help_best"
+                android:layout_width="142dp"
+                android:layout_height="157dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="55dp"
+                android:background="@drawable/map" />
+
+            <TextView
+                android:id="@+id/helpText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:text="가까운 약국과 만나기"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+            <ImageView
+                android:id="@+id/list_btn"
+                android:layout_width="150dp"
+                android:layout_height="148dp"
+                android:background="@drawable/medlist"
+                android:layout_marginTop="55dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+
+                />
+
+            <TextView
+                android:id="@+id/helpText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:text="나의 약을 한눈에"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+
+            <ImageView
+                android:id="@+id/help_statistics"
+                android:layout_width="150dp"
+                android:layout_height="148dp"
+                android:layout_marginTop="55dp"
+                android:layout_gravity="center"
+                android:background="@drawable/statistics"
+                android:layout_weight="1"
+
+                />
+
+            <TextView
+                android:id="@+id/helpText6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20sp"
+                android:text="복용 통계 확인"
+                android:textColor="#000000"
+                android:textSize="20sp"/>
+
+
+            <Button
+                android:id="@+id/Okbtn"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="20sp"
+                android:background="@drawable/shape_add"
+                android:fontFamily="@font/pink"
+                android:text="확인"
+                android:textColor="#ffffff"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

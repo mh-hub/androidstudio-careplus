@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" >
+<!--    //배경색-->
+    <solid android:color="#00ff0000" />
+<!--    //선색-->
+    <stroke
+        android:width="2sp"
+        android:color="#ccfcae1e" />
+
+    <corners
+        android:topLeftRadius="10sp"
+        android:topRightRadius="10sp"
+        android:bottomLeftRadius="10sp"
+        android:bottomRightRadius="10sp"  />
+
+</shape>

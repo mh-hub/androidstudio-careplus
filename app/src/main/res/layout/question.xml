@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@android:id/tabhost">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20sp">
+
+        <ImageButton
+            android:id="@+id/categorybtnq"
+            android:layout_width="30sp"
+            android:layout_height="30sp"
+            android:layout_alignParentLeft="true"
+            android:background="@drawable/ic_home_black_24dp"/>
+
+        <FrameLayout
+            android:id="@android:id/tabcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="30sp">
+
+            <LinearLayout
+                android:id="@+id/tab_question"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/text_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="이 름"
+                            android:fontFamily="@font/pink"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/text_email"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="이메일"
+                            android:fontFamily="@font/pink"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/text_question"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="상담분류"
+                            android:fontFamily="@font/pink"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/text_title"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="제 목"
+                            android:fontFamily="@font/pink"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/text_content"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2.7"
+                            android:gravity="center"
+                            android:text="내 용"
+                            android:fontFamily="@font/pink"
+                            android:textColor="#000000"
+                            android:textSize="20sp" />
+
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="15sp"
+                        android:orientation="vertical">
+
+                        <EditText
+                            android:id="@+id/edit_name"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.7"
+                            android:hint="이름을 입력해주세요"
+                            android:backgroundTint = "#ccFCAE1E"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/edit_email"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.9"
+                            android:hint="이메일을 입력해주세요"
+                            android:backgroundTint = "#ccFCAE1E"
+
+                            />
+
+                        <Spinner
+                            android:id="@+id/spinner_question"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:entries="@array/상담분류"
+                            android:backgroundTint = "#ccFCAE1E"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/edit_title"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
+                            android:hint="제목을 입력해주세요"
+                            android:backgroundTint = "#ccFCAE1E"
+
+                            />
+
+                        <EditText
+                            android:id="@+id/edit_content"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="4.7"
+                            android:background="@drawable/shape3"
+                            android:gravity="top"
+                            android:hint=" 내용을 입력해주세요"
+
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:layout_weight="0.3"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+
+                    >
+
+                    <Button
+                        android:id="@+id/btnCancel"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:text="취소"
+                        android:fontFamily="@font/pink"
+                        android:textSize="20dp"
+                        android:background="@drawable/shape_add"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"/>
+
+                    <Button
+                        android:id="@+id/btnOK"
+                        android:layout_width="130dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:text="확인"
+                        android:fontFamily="@font/pink"
+                        android:textSize="20dp"
+                        android:background="@drawable/shape_add"
+                        android:textColor="#ffffff"
+                        android:textStyle="bold"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
